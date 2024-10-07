@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="es">
+<!--https://HugoTejedorArcoitza.github.io/sew/-->
 
 <head>
 	<!-- Datos que describen el documento -->
@@ -15,46 +16,90 @@
 
 <body>
 	<!-- Datos con el contenido que aparece en el navegador -->
-	<h1> F1 Desktop</h1>
-	<h2> Oscar piastri</h2>
 
-	<picture>
-		<source media="(max-width: 465px)" srcset="multimedia/piastri_300.jpg">
-		<source media="(max-width: 799px)" srcset="multimedia/piastri_700.jpg">
-		<source media="(min-width: 800px)" srcset="multimedia/piastri.jpg">
-		<img src="piastri.jpg" alt="Foto de Oscar Piastri">
-	</picture>
+	<header>
+		<h1> F1 Desktop</h1>
+		<nav>
+			<a href="calendario.html" title="Enlace al calendario">Calendario</a>
+			<a href="circuito.html" title="Enlace al documento del circuito">Circuito</a>
+			<a href="index.html" title="Enlace al índice">Índice</a>
+			<a href="juegos.html" title="Enlace a los juegos">Juegos</a>
+			<a href="metereologia.html" title="Enlace a la meteorología">Meteorología</a>
+			<a href="noticias.html" title="Enlace a las noticias">Noticias</a>
+			<a href="piloto.html" title="Enlace al piloto">Piloto</a>
+			<a href="viajes.html" title="Enlace a los viajes">Viajes</a>
+		</nav>
+	</header>
 
 
 
+	<main>
+		<!-- Sección de datos personales y fotografía -->
+		<section>
+			<h2>Oscar Piastri</h2>
+			<picture>
+				<source media="(max-width: 465px)" srcset="multimedia/piastri_300.jpg">
+				<source media="(max-width: 799px)" srcset="multimedia/piastri_700.jpg">
+				<source media="(min-width: 800px)" srcset="multimedia/piastri.jpg">
+				<img src="piastri.jpg" alt="Foto de Oscar Piastri">
+			</picture>
+		</section>
 
-	<h3>Biografía</h3>
-	<p>
-		Oscar Piastri, originario de Melbourne, creció a escasos kilómetros del circuito de Albert Park, sede del
-		Gran
-		Premio de Australia. Desde pequeño, su pasión por la Fórmula 1 se encendió viendo a los grandes pilotos
-		competir
-		en las calles de su ciudad. Sin embargo, su camino hacia la cima no fue fácil. Al igual que otros pilotos
-		australianos como Mark Webber y Daniel Ricciardo, Piastri tuvo que mudarse a Europa para enfrentarse a los
-		mejores y atraer la atención de los grandes equipos de Fórmula 1.
+		<!-- Sección de biografía y datos específicos -->
+		<section>
+			<h3>Biografía</h3>
+			<p>
+				Oscar Piastri, originario de Melbourne, creció a escasos kilómetros del circuito de Albert Park, sede
+				del
+				Gran Premio de Australia. Desde pequeño, su pasión por la Fórmula 1 se encendió viendo a los grandes
+				pilotos competir en las calles de su ciudad. Sin embargo, su camino hacia la cima no fue fácil. Al igual
+				que otros pilotos australianos como Mark Webber y Daniel Ricciardo, Piastri tuvo que mudarse a Europa
+				para enfrentarse a los mejores y atraer la atención de los grandes equipos de Fórmula 1.
+			</p>
+		</section>
 
-		Tras destacar en el karting australiano, Piastri continuó su desarrollo en los campeonatos europeos. A los
-		15
-		años, debutó en monoplazas en la Fórmula 4 de los Emiratos Árabes Unidos, logrando dos podios. Este fue solo
-		el
-		inicio de una carrera meteórica que lo llevó a ser subcampeón en la Fórmula 4 británica, campeón de la
-		Fórmula
-		Renault, y posteriormente conquistar la Fórmula 3 y la Fórmula 2, esta última con una ventaja de más de 50
-		puntos.
+		<!-- Sección de audio y video sobre el piloto -->
+		<section>
+			<h3>Video de Oscar Piastri</h3>
+			<video controls width="600">
+				<source src="multimedia/piastri_video.mp4" type="video/mp4">
+				<source src="multimedia/piastri_video.webm" type="video/webm">
+				Tu navegador no soporta el elemento de video.
+			</video>
 
-		Su talento atrajo tanto la atención que dos equipos de Fórmula 1, Alpine y McLaren, se disputaron sus
-		servicios
-		para la temporada 2023. Finalmente, McLaren fue el equipo que logró ficharlo, y Piastri no tardó en
-		justificar
-		esa decisión, consiguiendo varios podios en una temporada de debut impresionante, consolidándose como una de
-		las
-		promesas más destacadas del automovilismo actual.
-	</p>
+			<h3>Radio Oscar Piastri en su victoria en Azerbaijan 2024</h3>
+			<audio controls>
+				<source src="multimedia/piastri_audio.mp3" type="audio/mpeg">
+				<source src="multimedia/piastri_audio.wav" type="audio/wav">
+				Tu navegador no soporta el elemento de audio.
+			</audio>
+		</section>
+
+		<!-- Sección de estadísticas -->
+		<section>
+			<h3>Resultados de su última temporada</h3>
+			<table>
+				<caption>Resultados de Oscar Piastri en la Temporada Fórmula 1 2023</caption>
+				<tr>
+					<td></td>
+					<th id="th_puntos" scope="col">Puntos obtenidos</th>
+					<th id="th_posicion" scope="col">Posición final</th>
+					<th id="th_poles" scope="col">Poles</th>
+					<th id="th_victorias" scope="col">Victorias</th>
+					<th id="th_podios" scope="col">Podios</th>
+				</tr>
+				<tr>
+					<th id="th_datos" scope="row">Datos</th>
+					<td headers="th_datos th_puntos">97 puntos</td>
+					<td headers="th_datos th_posicion">11ª posición</td>
+					<td headers="th_datos th_poles">0 poles</td>
+					<td headers="th_datos th_victorias">0 victorias</td>
+					<td headers="th_datos th_podios">2 podios</td>
+				</tr>
+			</table>
+		</section>
+	</main>
+
 	<h3>Escuderias</h3>
 	<p>A lo largo de su carrera, Oscar Piastri ha formado parte de dos prestigiosos equipos en la Fórmula 1. Su
 		primera
@@ -72,13 +117,16 @@
 		<li>Alpine F1 team</li>
 		<li>McLaren F1 team</li>
 	</ol>
-	<h3> Aficiones</h3>
-	<p> Fuera de las pistas de Fórmula 1, Oscar Piastri disfruta de una vida activa y equilibrada que lo ayuda a
-		mantenerse en forma y relajarse del ajetreo de las carreras. A pesar de la intensa presión de su carrera
-		profesional, Piastri encuentra tiempo para dedicarse a varias actividades que le apasionan. Entre ellas se
-		destacan tanto deportes físicos que complementan su entrenamiento, como pasatiempos que le permiten
-		desconectar
-		y disfrutar de momentos más relajados.</p>
+	<aside>
+		<h3>Aficiones</h3>
+		<ul>
+			<li>Levantamiento de peso</li>
+			<li>Natación</li>
+			<li>Fútbol</li>
+			<li>Videojuegos</li>
+			<li>Volleyball</li>
+		</ul>
+	</aside>
 	<h3>Estadisticas</h3>
 	<p><a href="https://www.formula1.com/en/drivers/oscar-piastri">
 			Oscar Piastri</a> pese a no llevar mucho tiempo en la formula 1, ha ganado ya 2 carreras y ha conseguido
@@ -91,26 +139,8 @@
 		<li>Volleyball</li>
 	</ul>
 
-	<h3>Resultados de su última temporada</h3>
-	<table>
-		<caption>Resultados de Oscar Piastri en la Temporada Fórmula 1 2023</caption>
-		<tr>
-			<td> </td>
-			<th>Puntos obtenidos</th>
-			<th>Posición final</th>
-			<th>Poles</th>
-			<th>Victorias</th>
-			<th>Podios</th>
-		</tr>
-		<tr>
-			<th>Datos</th>
-			<td>97 puntos</td>
-			<td>11ª posición</td>
-			<td>0 poles</td>
-			<td>0 victorias</td>
-			<td>2 podios</td>
-		</tr>
-	</table>
+
+
 
 	<h3> Resultados más destacados de Oscar
 		Piastri (últimos 3 años)</h3>
@@ -154,37 +184,35 @@
 	</ul>
 
 
+	<section>
+		<h3>Términos</h3>
+		<dl>
+			<dt>Pit Stop</dt>
+			<dd>Es la parada que realiza un piloto durante la carrera para cambiar neumáticos, repostar combustible (en
+				el pasado) o realizar reparaciones rápidas.</dd>
 
-	<h3>Terminos</h3>
-	<dl>
-		<dt>Pit Stop</dt>
-		<dd>Es la parada que realiza un piloto durante la carrera para cambiar neumáticos, repostar combustible (en
-			el
-			pasado) o realizar reparaciones rápidas.</dd>
+			<dt>Pole Position</dt>
+			<dd>Es la primera posición en la parrilla de salida que obtiene el piloto más rápido durante la
+				clasificación.
+			</dd>
 
-		<dt>Pole Position</dt>
-		<dd>Es la primera posición en la parrilla de salida que obtiene el piloto más rápido durante la
-			clasificación.
-		</dd>
+			<dt>Safety Car</dt>
+			<dd>Es un coche de seguridad que entra en la pista para reducir la velocidad de los autos en caso de
+				accidente o condiciones peligrosas.</dd>
 
-		<dt>Safety Car</dt>
-		<dd>Es un coche de seguridad que entra en la pista para reducir la velocidad de los autos en caso de
-			accidente o
-			condiciones peligrosas.</dd>
+			<dt>DRS (Drag Reduction System)</dt>
+			<dd>Es un sistema que permite reducir la resistencia al aire abriendo un ala móvil en el alerón trasero,
+				aumentando la velocidad en rectas.</dd>
 
-		<dt>DRS (Drag Reduction System)</dt>
-		<dd>Es un sistema que permite reducir la resistencia al aire abriendo un ala móvil en el alerón trasero,
-			aumentando la velocidad en rectas.</dd>
+			<dt>Undercut</dt>
+			<dd>Es una estrategia en la que un piloto entra en boxes antes que su competidor directo para aprovechar el
+				rendimiento de los neumáticos nuevos y adelantarlo cuando este haga su parada.</dd>
 
-		<dt>Undercut</dt>
-		<dd>Es una estrategia en la que un piloto entra en boxes antes que su competidor directo para aprovechar el
-			rendimiento de los neumáticos nuevos y adelantarlo cuando este haga su parada.</dd>
-
-		<dt>Overcut</dt>
-		<dd>Es una estrategia en la que un piloto permanece en pista más tiempo que su competidor directo para
-			intentar
-			ganar posiciones cuando este entra en boxes.</dd>
-	</dl>
+			<dt>Overcut</dt>
+			<dd>Es una estrategia en la que un piloto permanece en pista más tiempo que su competidor directo para
+				intentar ganar posiciones cuando este entra en boxes.</dd>
+		</dl>
+	</section>
 
 	<nav>
 		<a href="calendario.html" title="Enlace al calendario">Indice</a>
