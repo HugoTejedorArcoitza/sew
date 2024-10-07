@@ -1,45 +1,22 @@
 /* Hugo Tejedor Arcoitza UO295339 */
-h1 {
+/* Hugo Tejedor Arcoitza UO295339 */
+
+body {
+    font-size: 20px; 
     font-family: Cambria, Georgia, serif;
+    background-color: #f6c5a3; 
+    color: #302122; 
+}
+
+h1 {
     font-size: 24px;
-    font-style: normal;
-    font-variant: normal;
     font-weight: 700;
     line-height: 26.4px;
+    color: #dc6018; 
 }
 
 h3 {
-    font-family: Cambria, Georgia, serif;
-    font-size: 14px;
-    font-style: normal;
-    font-variant: normal;
     font-weight: 700;
     line-height: 15.4px;
-}
-
-p {
-    font-family: Cambria, Georgia, serif;
-    font-size: 14px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 20px;
-}
-
-blockquote {
-    font-family: Cambria, Georgia, serif;
-    font-size: 21px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 30px;
-}
-
-pre {
-    font-family: Cambria, Georgia, serif;
-    font-size: 13px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 18.5714px;
+    color: #dc6018; 
 }
