@@ -1,22 +1,21 @@
 /* Hugo Tejedor Arcoitza UO295339 */
-/* Hugo Tejedor Arcoitza UO295339 */
 
 body {
     font-size: 20px; 
     font-family: Cambria, Georgia, serif;
     background-color: #f6c5a3; 
-    color: #302122; 
+    color: #1e0f0c;  /* Texto principal más oscuro */
 }
 
 h1 {
     font-size: 24px;
     font-weight: 700;
     line-height: 26.4px;
-    color: #dc6018; 
+    color: #b84300;  /* Encabezado con mejor contraste */
 }
 
 h3 {
     font-weight: 700;
     line-height: 15.4px;
-    color: #dc6018; 
+    color: #b84300;  /* Encabezado con mejor contraste */
 }
