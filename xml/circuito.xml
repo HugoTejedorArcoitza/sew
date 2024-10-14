@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE circuito SYSTEM "circuito.dtd">
+<circuito>
+    <nombre>A. Hermanos Rodríguez</nombre>
+    <longitud_circuito unidades="kilometros">4,421 </longitud_circuito>
+    <anchura unidades="metros">15</anchura>
+    <fecha_carrera>2024-10-27 </fecha_carrera>
+    <hora>21:00</hora>
+    <vueltas>71 vueltas</vueltas>
+    <localidad>Ciudad de México</localidad>
+    <pais>México</pais>
+    <referencias>
+        <referencia>https://www.dazn.com/es-ES/news/motor/autodromo-hermanos-rodriguez-donde-como-caracteristicas-llegar-fotos-escenario-gp-mexico-mundial-f1/mxpvg88ch1as1qky18rqbe3ex</referencia>
+        <referencia>https://www.formula1.com/en/racing/2024/mexico</referencia>
+        <referencia>https://www.caranddriver.com/es/formula-1/calendario/g44472722/formula-1-calendario-2024/</referencia>
+    </referencias>
+    <galeria_fotografias>
+        <fotografia>circuito.jpg</fotografia>
+        <fotografia>circuito2.jpg</fotografia>
+    </galeria_fotografias>
+    <coordenadas>
+        <longitud>-99.0540</longitud>
+        <latitud>19.2422</latitud>
+        <altitud>2231.27</altitud>
+    </coordenadas>
+
+    <tramos> 
+        <longitud>19,2417</longitud>      
+        <latitud>-99,0502</latitud>
+        <altitud>2231.01</altitud>
+    </tramos>
+
+    <tramos> 
+        <longitud>19,2417</longitud>      
+        <latitud>-99,0501</latitud>
+        <altitud>2230.96</altitud>
+    </tramos>
+
+    <tramos> 
+        <longitud>19,2416</longitud>      
+        <latitud>-99,0501</latitud>
+        <altitud>2230.94</altitud>
+    </tramos>
+
+    <tramos> 
+        <longitud>19,2415</longitud>      
+        <latitud>-99,0501</latitud>
+        <altitud>2231.02</altitud>
+    </tramos>
+
+    <tramos> 
+        <longitud>19,2414</longitud>      
+        <latitud>-99,0501</latitud>
+        <altitud>2230.98</altitud>
+    </tramos>
+
+    <tramos> 
+        <longitud>19,2413</longitud>      
+        <latitud>-99,0501</latitud>
+        <altitud>2231.05</altitud>
+    </tramos>
+
+    <tramos> 
+        <longitud>19,2413</longitud>      
+        <latitud>-99,0500</latitud>
+        <altitud>2231.01</altitud>
+    </tramos>
+
+    <tramos> 
+        <longitud>19,2412</longitud>      
+        <latitud>-99,0459</latitud>
+        <altitud>2231</altitud>
+    </tramos>
+    
+    <tramos> 
+        <longitud>19,2411</longitud>      
+        <latitud>-99,0458</latitud>
+        <altitud>2231,2</altitud>
+    </tramos>
+</circuito>
