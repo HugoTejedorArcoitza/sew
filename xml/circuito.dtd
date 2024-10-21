@@ -1,4 +1,4 @@
-<!ELEMENT circuito (nombre, longitud_circuito, anchura, fecha_carrera, hora, vueltas, localidad, pais, referencias, galeria_fotografias, galeria_videos?, coordenadas, tramos+)>
+<!ELEMENT circuito (nombre, longitud_circuito, anchura, fecha_carrera, hora, vueltas, localidad, pais, referencias, galeria_fotografias, galeria_videos?, coordenadas, tramos)>
 
 <!ELEMENT nombre (#PCDATA)>
 <!ELEMENT longitud_circuito (#PCDATA)>
@@ -17,7 +17,8 @@
 <!ELEMENT galeria_videos (video*)>
 <!ELEMENT video (#PCDATA)>
 <!ELEMENT coordenadas (longitud, latitud, altitud)>
-<!ELEMENT tramos (longitud, latitud, altitud)>
+<!ELEMENT tramos (tramo+)>
+<!ELEMENT tramo (coordenadas)>
 
 <!ELEMENT longitud (#PCDATA)>
 <!ELEMENT latitud (#PCDATA)>
