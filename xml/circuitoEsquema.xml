@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE circuito SYSTEM "circuito.dtd">
-<circuito>
+<circuito xmlns="http://www.uniovi.es"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.uniovi.es circuito.xsd">
     <nombre>A. Hermanos Rodríguez</nombre>
     <longitud_circuito unidades="kilometros">4.421</longitud_circuito>
     <anchura unidades="metros">15</anchura>
@@ -21,8 +22,9 @@
         <fotografia>circuito2.jpg</fotografia>
     </galeria_fotografias>
     <coordenadas>
-        <longitud>-99.0540</longitud>
-        <latitud>19.2422</latitud>
+
+        <longitud>19.2422</longitud>
+        <latitud>-99.0540</latitud>
         <altitud>2231.27</altitud>
     </coordenadas>
 
@@ -128,7 +130,7 @@
         </tramo>
         <tramo>
             <coordenadas>
-                <longitud>19.23.49</longitud>
+                <longitud>19.2349</longitud>
                 <latitud>-99.0512</latitud>
                 <altitud>2229</altitud>
             </coordenadas>

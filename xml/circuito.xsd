@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.uniovi.es"
+           xmlns="http://www.uniovi.es"
+           elementFormDefault="qualified">
+	<xs:element name="circuito">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nombre" />
+				<xs:element ref="longitud_circuito" />
+				<xs:element ref="anchura" />
+				<xs:element ref="fecha_carrera" />
+				<xs:element ref="hora" />
+				<xs:element ref="vueltas" />
+				<xs:element ref="localidad" />
+				<xs:element ref="pais" />
+				<xs:element ref="referencias" />
+				<xs:element ref="galeria_fotografias" />
+				<xs:element minOccurs="0" maxOccurs="1" ref="galeria_videos" />
+				<xs:element ref="coordenadas" />
+				<xs:element ref="tramos" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="nombre" type="xs:string" />
+
+	<xs:element name="longitud_circuito">
+		<xs:annotation>
+			<xs:documentation> La longitud es en kilómetros. </xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:float">
+					<xs:attribute name="unidades" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+
+
+	<xs:element name="anchura">
+		<xs:annotation>
+			<xs:documentation> La anchura es en metros </xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:float">
+				<xs:minInclusive value="2" />
+				<xs:maxInclusive value="25" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="fecha_carrera">
+		<xs:simpleType>
+			<xs:restriction base="xs:date" />
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="hora">
+		<xs:simpleType>
+			<xs:restriction base="xs:time" />
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="vueltas">
+		<xs:simpleType>
+			<xs:restriction base="xs:int">
+				<xs:minInclusive value="10" />
+				<xs:maxInclusive value="90" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="localidad" type="xs:string" />
+	<xs:element name="pais" type="xs:string" />
+	<xs:element name="referencias">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="referencia" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="referencia" type="xs:string" />
+	<xs:element name="galeria_fotografias">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="fotografia" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="fotografia" type="xs:string" />
+	<xs:element name="galeria_videos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="video" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="video" type="xs:string" />
+	<xs:element name="coordenadas">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="longitud" />
+				<xs:element ref="latitud" />
+				<xs:element ref="altitud" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="tramos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="tramo" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="tramo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="coordenadas" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="longitud">
+		<xs:simpleType>
+			<xs:restriction base="xs:float">
+				<xs:minInclusive value="-90" />
+				<xs:maxInclusive value="90" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+
+	<xs:element name="latitud">
+		<xs:simpleType>
+			<xs:restriction base="xs:float">
+				<xs:minInclusive value="-180" />
+				<xs:maxInclusive value="180" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="altitud">
+		<xs:annotation>
+			<xs:documentation> La altitud es en metros </xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:float">
+				<xs:minInclusive value="0" />
+				<xs:maxInclusive value="3000" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+</xs:schema>
