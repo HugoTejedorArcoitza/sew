@@ -1,0 +1,49 @@
+/* Hugo Tejedor Arcoitza UO295339 */
+
+body {
+    font-size: 20px;
+    font-family: Cambria, Georgia, serif;
+    background-color: #f6c5a3;
+    color: #301c18;
+}
+
+header a {
+    text-decoration: none;
+    color: #003366;
+}
+
+header+p {
+    font-size: 0.75em;
+    color: #6e6e6e;
+}
+
+header+p a {
+
+    text-decoration: none;
+    color: #003366;
+}
+
+a {
+    text-decoration: none;
+    color: #003366;
+
+}
+
+a:visited {
+    text-decoration: none;
+    color: #b84300;
+
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26.4px;
+    color: #b84300;
+}
+
+h3 {
+    font-weight: 700;
+    line-height: 15.4px;
+    color: #b84300;
+}
