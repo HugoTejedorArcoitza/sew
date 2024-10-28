@@ -4,7 +4,7 @@
     xsi:schemaLocation="http://www.uniovi.es circuito.xsd">
     <nombre>A. Hermanos Rodríguez</nombre>
     <longitud_circuito unidades="kilometros">4.421</longitud_circuito>
-    <anchura unidades="metros">15</anchura>
+    <anchura >15</anchura>
     <fecha_carrera>2024-10-27</fecha_carrera>
     <hora>21:00</hora>
     <vueltas>71</vueltas>
