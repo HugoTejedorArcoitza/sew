@@ -3,10 +3,57 @@
 body {
     font-size: 20px;
     font-family: Cambria, Georgia, serif;
-    background-color: #f6c5a3;
+    background-color: #f9f9f9;
     color: #301c18;
+    margin: 0;
+    padding: 20px;
+    width: 100%; /* Ocupa todo el ancho de la ventana */
+}
+/* Estilo general para las secciones */
+section {
+    padding: 20px;              /* Espacio interno para que el contenido no esté pegado a los bordes */
+    margin-bottom: 20px;        /* Espacio entre cada sección */
+    border: 1px solid #ddd;     /* Borde sutil alrededor de cada sección */
+    border-radius: 8px;         /* Bordes redondeados para un efecto visual agradable */
+    background-color: #f6c5a3;  /* Color de fondo suave para diferenciar las secciones */
 }
 
+/* Estilo para el encabezado de cada sección */
+section h3 {
+    border-bottom: 2px solid #ccc; /* Línea debajo de los encabezados para destacar cada título */
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Si deseas un espacio mayor entre el aside y el contenido principal */
+aside {
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;     /* Color de fondo específico para el aside */
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Estilo para el encabezado principal y navegación */
+header {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+header nav a {
+    color: #fff;
+    padding: 8px 15px;
+    text-decoration: none;
+}
+
+
+/* Opcional: Aplica algo de margen en los elementos de sección para que no estén tan pegados */
+section {
+    margin-bottom: 20px;     /* Espacio entre cada sección */
+}
 header a {
     text-decoration: none;
     color: #003366;
